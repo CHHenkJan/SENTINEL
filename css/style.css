@@ -33,6 +33,7 @@
   --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
   --max-width: 1200px;
   --header-height: 72px;
+  --header-height-expanded: 140px;
 }
 
 html {
@@ -85,13 +86,19 @@ img {
   top: 0;
   left: 0;
   right: 0;
-  height: var(--header-height);
-  background: rgba(6, 10, 18, 0.92);
+  height: var(--header-height-expanded);
+  background: rgba(6, 10, 18, 0.95);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border-bottom: 1px solid var(--border-color);
   z-index: 1000;
-  transition: background 0.3s ease;
+  transition: height 0.4s ease, background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header.header--scrolled {
+  height: var(--header-height);
+  background: rgba(6, 10, 18, 0.98);
+  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.3);
 }
 
 .header__inner {
@@ -107,23 +114,34 @@ img {
 .header__logo {
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 16px;
   text-decoration: none;
   flex-shrink: 0;
 }
 
 .header__logo-img {
-  height: 44px;
-  width: 44px;
+  height: 80px;
+  width: 80px;
   object-fit: contain;
+  transition: height 0.4s ease, width 0.4s ease;
+}
+
+.header--scrolled .header__logo-img {
+  height: 40px;
+  width: 40px;
 }
 
 .header__logo-text {
-  font-size: 18px;
+  font-size: 26px;
   font-weight: 700;
   letter-spacing: 0.08em;
   color: var(--blue-primary);
   text-transform: uppercase;
+  transition: font-size 0.4s ease;
+}
+
+.header--scrolled .header__logo-text {
+  font-size: 18px;
 }
 
 .header__nav {
@@ -183,7 +201,7 @@ img {
 
 /* ── Hero ── */
 .hero {
-  padding-top: calc(var(--header-height) + 80px);
+  padding-top: calc(var(--header-height-expanded) + 80px);
   padding-bottom: 80px;
   position: relative;
   overflow: hidden;
@@ -828,7 +846,25 @@ img {
   }
 
   .hero {
-    padding-top: calc(var(--header-height) + 40px);
+    padding-top: calc(var(--header-height-expanded) + 40px);
     padding-bottom: 60px;
+  }
+
+  .header__logo-img {
+    height: 60px;
+    width: 60px;
+  }
+
+  .header--scrolled .header__logo-img {
+    height: 36px;
+    width: 36px;
+  }
+
+  .header__logo-text {
+    font-size: 20px;
+  }
+
+  .header--scrolled .header__logo-text {
+    font-size: 16px;
   }
 }

@@ -61,6 +61,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  // ── Header Shrink on Scroll ──
+  const header = document.querySelector('.header');
+  if (header) {
+    const scrollThreshold = 50;
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > scrollThreshold) {
+        header.classList.add('header--scrolled');
+      } else {
+        header.classList.remove('header--scrolled');
+      }
+    });
+  }
+
   // ── Active Nav Link ──
   const currentPage = window.location.pathname.split('/').pop() || 'index.html';
   document.querySelectorAll('.header__nav a').forEach(link => {
