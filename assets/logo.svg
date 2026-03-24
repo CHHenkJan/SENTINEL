@@ -1,49 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
-    <radialGradient id="glow" cx="50%" cy="50%" r="25%">
-      <stop offset="0%" stop-color="#4a9eff" stop-opacity="0.6"/>
-      <stop offset="60%" stop-color="#4a9eff" stop-opacity="0.15"/>
+    <radialGradient id="glow" cx="50%" cy="46%" r="22%">
+      <stop offset="0%" stop-color="#4a9eff" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#4a9eff" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="shieldGrad" x1="50%" y1="0%" x2="50%" y2="100%">
-      <stop offset="0%" stop-color="#5ab0ff"/>
-      <stop offset="100%" stop-color="#2a7acc"/>
-    </linearGradient>
   </defs>
 
   <!-- Background -->
   <rect width="512" height="512" fill="#0a1020" rx="8"/>
 
-  <!-- Glow effect behind shield -->
-  <circle cx="256" cy="240" r="140" fill="url(#glow)"/>
+  <!-- Glow behind center -->
+  <circle cx="256" cy="236" r="120" fill="url(#glow)"/>
 
-  <!-- Outer shield shape - wide top, tapered to point at bottom -->
-  <path d="M256 72
-           L432 160
-           L432 296
-           L256 440
-           L80 296
-           L80 160
-           Z"
-        fill="none" stroke="url(#shieldGrad)" stroke-width="6" stroke-linejoin="round" opacity="0.9"/>
+  <!-- Outer shield -->
+  <path d="M256 68 L424 148 L424 308 L256 440 L88 308 L88 148 Z"
+        fill="none" stroke="#4a9eff" stroke-width="5" stroke-linejoin="round"/>
 
-  <!-- Inner shield shape - smaller, same proportions -->
-  <path d="M256 132
-           L376 192
-           L376 296
-           L256 380
-           L136 296
-           L136 192
-           Z"
-        fill="none" stroke="#4a9eff" stroke-width="4" stroke-linejoin="round" opacity="0.7"/>
-
-  <!-- Horizontal accent lines on inner shield -->
-  <line x1="136" y1="192" x2="376" y2="192" stroke="#4a9eff" stroke-width="2" opacity="0.3"/>
-  <line x1="160" y1="296" x2="352" y2="296" stroke="#4a9eff" stroke-width="1.5" opacity="0.2"/>
+  <!-- Inner shield -->
+  <path d="M256 128 L372 188 L372 308 L256 388 L140 308 L140 188 Z"
+        fill="none" stroke="#4a9eff" stroke-width="3.5" stroke-linejoin="round" opacity="0.7"/>
 
   <!-- Central square -->
-  <rect x="224" y="208" width="64" height="64" fill="#4a9eff" rx="4" opacity="0.95"/>
-
-  <!-- Inner glow on central square -->
-  <rect x="236" y="220" width="40" height="40" fill="#7ac0ff" rx="2" opacity="0.4"/>
+  <rect x="224" y="204" width="64" height="64" fill="#4a9eff" rx="3"/>
 </svg>
