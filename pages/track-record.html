@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Record — SENTINEL</title>
+  <meta name="description" content="SENTINEL paper trading performance with full statistical context and disclaimers.">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="../index.html" class="header__logo">
+        <img src="../assets/logo.svg" alt="SENTINEL Logo" class="header__logo-img">
+        <span class="header__logo-text">SENTINEL</span>
+      </a>
+      <button class="header__menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header__nav" id="navMenu">
+        <a href="../index.html">Home</a>
+        <a href="methodology.html">Methodology</a>
+        <a href="track-record.html" class="active">Track Record</a>
+        <a href="products.html">Products</a>
+        <a href="research.html">Research</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Page Header ── -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section__label">Performance</span>
+      <h1 class="section__title">Track Record</h1>
+      <p class="section__body">
+        Performance data from SENTINEL's paper trading on Cryptohopper.
+        All results are from simulated trading — no real capital is deployed.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Stats Overview ── -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Paper Trading Statistics</h2>
+
+      <div class="track-stats">
+        <div class="track-stat">
+          <div class="track-stat__value">30–60</div>
+          <div class="track-stat__label">Signals / Month</div>
+        </div>
+        <div class="track-stat">
+          <div class="track-stat__value">1–5d</div>
+          <div class="track-stat__label">Avg Hold Time</div>
+        </div>
+        <div class="track-stat">
+          <div class="track-stat__value">1%</div>
+          <div class="track-stat__label">Max Risk / Trade</div>
+        </div>
+        <div class="track-stat">
+          <div class="track-stat__value">2%</div>
+          <div class="track-stat__label">Hard Stop Loss</div>
+        </div>
+        <div class="track-stat">
+          <div class="track-stat__value">6</div>
+          <div class="track-stat__label">Max Positions</div>
+        </div>
+        <div class="track-stat">
+          <div class="track-stat__value">4H/D</div>
+          <div class="track-stat__label">Timeframes</div>
+        </div>
+      </div>
+
+      <div class="track-disclaimer">
+        All performance data shown on this page is derived from paper trading on Cryptohopper.
+        No real capital is involved. Paper trading does not account for slippage, liquidity constraints,
+        or real market impact. Past performance — even in live trading — is not indicative of future results.
+        Statistical edge in historical data does not guarantee future profitability.
+        Counter-trend strategies are particularly vulnerable during sustained trending markets.
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Context ── -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Statistical Context</h2>
+      <div class="section__body">
+        <p>
+          Mean reversion strategies have well-documented performance characteristics.
+          They tend to perform well in ranging and volatile markets, where price oscillations
+          around the mean are frequent and pronounced.
+        </p>
+        <br>
+        <p>
+          However, during sustained trending phases (strong bull or bear markets),
+          mean reversion signals can produce consecutive losses as prices continue to
+          deviate from historical averages. SENTINEL's time-based exit (5-day maximum)
+          and hard stop loss (2%) are designed to limit drawdown during these periods.
+        </p>
+        <br>
+        <p>
+          <strong>No strategy works in all market conditions.</strong> SENTINEL is designed
+          for specific market regimes and includes guidance on when to pause trading.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="../assets/logo.svg" alt="SENTINEL">
+            <span>SENTINEL</span>
+          </div>
+          <p class="footer__legal">
+            &copy; 2026 SENTINEL Signals. Paper trading only. Not financial advice.
+            Past performance is not indicative of future results.
+          </p>
+        </div>
+        <div class="footer__links">
+          <a href="methodology.html">Methodology</a>
+          <a href="track-record.html">Track Record</a>
+          <a href="products.html">Products</a>
+          <a href="research.html">Research</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
