@@ -1,44 +1,25 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
-    <radialGradient id="glow" cx="50%" cy="50%" r="15%">
-      <stop offset="0%" stop-color="#4a9eff" stop-opacity="0.8"/>
+    <radialGradient id="glow" cx="50%" cy="46%" r="22%">
+      <stop offset="0%" stop-color="#4a9eff" stop-opacity="0.5"/>
       <stop offset="100%" stop-color="#4a9eff" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4a9eff"/>
-      <stop offset="100%" stop-color="#2a7acc"/>
-    </linearGradient>
   </defs>
 
   <!-- Background -->
-  <rect width="512" height="512" fill="#060a12" rx="8"/>
+  <rect width="512" height="512" fill="#0a1020" rx="8"/>
 
-  <!-- Shield outer shape -->
-  <path d="M256 60 L420 140 L420 300 L256 420 L92 300 L92 140 Z"
-        fill="none" stroke="#4a9eff" stroke-width="4" opacity="0.9"/>
+  <!-- Glow behind center -->
+  <circle cx="256" cy="236" r="120" fill="url(#glow)"/>
 
-  <!-- Inner rectangle frame -->
-  <rect x="176" y="140" width="160" height="160" rx="4"
-        fill="none" stroke="#4a9eff" stroke-width="3" opacity="0.7"/>
+  <!-- Outer shield -->
+  <path d="M256 68 L424 148 L424 308 L256 440 L88 308 L88 148 Z"
+        fill="none" stroke="#4a9eff" stroke-width="5" stroke-linejoin="round"/>
 
-  <!-- Connecting lines (targeting reticle style) -->
-  <line x1="176" y1="140" x2="138" y2="108" stroke="#4a9eff" stroke-width="1.5" opacity="0.4"/>
-  <line x1="336" y1="140" x2="374" y2="108" stroke="#4a9eff" stroke-width="1.5" opacity="0.4"/>
-  <line x1="176" y1="300" x2="138" y2="332" stroke="#4a9eff" stroke-width="1.5" opacity="0.4"/>
-  <line x1="336" y1="300" x2="374" y2="332" stroke="#4a9eff" stroke-width="1.5" opacity="0.4"/>
+  <!-- Inner shield -->
+  <path d="M256 128 L372 188 L372 308 L256 388 L140 308 L140 188 Z"
+        fill="none" stroke="#4a9eff" stroke-width="3.5" stroke-linejoin="round" opacity="0.7"/>
 
   <!-- Central square -->
-  <rect x="232" y="196" width="48" height="48" fill="#4a9eff" rx="2"/>
-
-  <!-- Glow effect -->
-  <circle cx="256" cy="220" r="80" fill="url(#glow)"/>
-
-  <!-- SENTINEL text -->
-  <text x="256" y="460" text-anchor="middle"
-        font-family="'JetBrains Mono', 'Courier New', monospace"
-        font-weight="700" font-size="36" letter-spacing="6"
-        fill="#4a9eff">SENTINEL</text>
-
-  <!-- Thin horizontal rule under text -->
-  <line x1="140" y1="475" x2="372" y2="475" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
+  <rect x="224" y="204" width="64" height="64" fill="#4a9eff" rx="3"/>
 </svg>
