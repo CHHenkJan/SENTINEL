@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Methodology — SENTINEL</title>
+  <meta name="description" content="SENTINEL's statistical mean reversion methodology explained — RSI(2), Bollinger Bands, and volume confirmation.">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="../index.html" class="header__logo">
+        <img src="../assets/logo.svg" alt="SENTINEL Logo" class="header__logo-img">
+        <span class="header__logo-text">SENTINEL</span>
+      </a>
+      <button class="header__menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header__nav" id="navMenu">
+        <a href="../index.html">Home</a>
+        <a href="methodology.html" class="active">Methodology</a>
+        <a href="track-record.html">Track Record</a>
+        <a href="products.html">Products</a>
+        <a href="research.html">Research</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Page Header ── -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section__label">Methodology</span>
+      <h1 class="section__title">Statistical Mean Reversion Explained</h1>
+      <p class="section__body">
+        A complete breakdown of SENTINEL's entry logic, risk framework, and the statistical
+        principles behind every signal.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Mean Reversion Concept ── -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">What is Mean Reversion?</h2>
+      <div class="section__body">
+        <p>
+          Mean reversion is a well-documented statistical phenomenon: prices that deviate
+          significantly from their historical average tend to return toward that average over time.
+          This happens in crypto markets with striking regularity — not because markets are
+          rational, but because extreme moves trigger counter-reactions.
+        </p>
+        <br>
+        <p>
+          Oversold assets attract buyers. Overbought assets attract sellers.
+          SENTINEL's job is to identify these extremes with mathematical precision —
+          and enter counter-trend positions at statistically advantageous moments.
+        </p>
+        <br>
+        <p><strong>This is not intuition. This is measurement.</strong></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Three Conditions ── -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">The Three Conditions</h2>
+      <p class="section__body">Every SENTINEL signal requires all three conditions to be true simultaneously.</p>
+
+      <div class="conditions-grid">
+        <div class="condition-card">
+          <div class="condition-card__number">Condition 01</div>
+          <div class="condition-card__title">RSI(2) Extreme</div>
+          <p class="condition-card__text">
+            RSI(2) below 10 for buy signals. RSI(2) above 90 for sell signals.
+            RSI with period 2 reacts to short-term extremes that RSI(14) misses entirely.
+            Backtested extensively by Larry Connors. Edge confirmed in academic literature.
+          </p>
+        </div>
+        <div class="condition-card">
+          <div class="condition-card__number">Condition 02</div>
+          <div class="condition-card__title">Bollinger Band Penetration</div>
+          <p class="condition-card__text">
+            Price must touch or cross below the lower Bollinger Band (20-period, 2&sigma;).
+            This confirms that the price deviation exceeds 2 standard deviations from the mean —
+            a statistically rare event (~5% of all candles).
+          </p>
+        </div>
+        <div class="condition-card">
+          <div class="condition-card__number">Condition 03</div>
+          <div class="condition-card__title">Volume Confirmation</div>
+          <p class="condition-card__text">
+            Volume must exceed the 20-period average by at least 50%.
+            High volume on extreme moves confirms capitulation or exhaustion —
+            the selling/buying pressure that precedes the reversion.
+          </p>
+        </div>
+      </div>
+
+      <div class="conditions-note">
+        ALL THREE MUST BE TRUE SIMULTANEOUSLY. If any condition is absent, no signal fires.
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Risk Framework ── -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Risk Framework</h2>
+      <div class="section__body">
+        <p>
+          Mean reversion is a powerful edge — but it comes with a specific risk:
+          during strong trending markets, reversion signals fail repeatedly.
+          SENTINEL manages this with three layers:
+        </p>
+      </div>
+
+      <ul class="risk-list">
+        <li class="risk-list__item">
+          <div class="risk-list__number">1</div>
+          <div class="risk-list__content">
+            <h4>Position size: 1% maximum risk per trade</h4>
+            <p>Small enough to survive a streak of consecutive losses without significant drawdown.</p>
+          </div>
+        </li>
+        <li class="risk-list__item">
+          <div class="risk-list__number">2</div>
+          <div class="risk-list__content">
+            <h4>Hard stop: 2% maximum loss per position</h4>
+            <p>No exceptions. Every position has a predefined exit point.</p>
+          </div>
+        </li>
+        <li class="risk-list__item">
+          <div class="risk-list__number">3</div>
+          <div class="risk-list__content">
+            <h4>Time exit: positions closed after 5 days</h4>
+            <p>
+              Waiting for mean reversion in a trending market can result in large losses.
+              SENTINEL cuts the position after 5 days and reassesses — preserving capital
+              for the next statistically valid opportunity.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── Signal Parameters ── -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Signal Parameters</h2>
+      <div class="conditions-grid">
+        <div class="condition-card">
+          <div class="condition-card__number">Timeframe</div>
+          <div class="condition-card__title">4H &amp; Daily</div>
+          <p class="condition-card__text">Signals generated on 4-hour and daily candles for optimal mean reversion detection.</p>
+        </div>
+        <div class="condition-card">
+          <div class="condition-card__number">Frequency</div>
+          <div class="condition-card__title">30–60 / Month</div>
+          <p class="condition-card__text">Across BTC, ETH, and top-cap altcoins. Frequency varies with market volatility.</p>
+        </div>
+        <div class="condition-card">
+          <div class="condition-card__number">Hold Time</div>
+          <div class="condition-card__title">1–5 Days Max</div>
+          <p class="condition-card__text">Time-based exit enforced. No position held longer than 5 days regardless of outcome.</p>
+        </div>
+        <div class="condition-card">
+          <div class="condition-card__number">Max Positions</div>
+          <div class="condition-card__title">6 Simultaneous</div>
+          <p class="condition-card__text">With correlation limits to prevent overexposure to correlated assets.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="../assets/logo.svg" alt="SENTINEL">
+            <span>SENTINEL</span>
+          </div>
+          <p class="footer__legal">
+            &copy; 2026 SENTINEL Signals. All signals and results are from paper trading only.
+            Not financial advice. Past performance is not indicative of future results.
+          </p>
+        </div>
+        <div class="footer__links">
+          <a href="methodology.html">Methodology</a>
+          <a href="track-record.html">Track Record</a>
+          <a href="products.html">Products</a>
+          <a href="research.html">Research</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

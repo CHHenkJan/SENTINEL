@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SENTINEL — Statistical Mean Reversion Signals</title>
+  <meta name="description" content="SENTINEL applies rigorous quantitative analysis to crypto markets — entering trades only when statistical conditions are extreme, confirmed, and validated.">
+  <link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="index.html" class="header__logo">
+        <img src="assets/logo.svg" alt="SENTINEL Logo" class="header__logo-img">
+        <span class="header__logo-text">SENTINEL</span>
+      </a>
+      <button class="header__menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header__nav" id="navMenu">
+        <a href="index.html" class="active">Home</a>
+        <a href="pages/methodology.html">Methodology</a>
+        <a href="pages/track-record.html">Track Record</a>
+        <a href="pages/products.html">Products</a>
+        <a href="pages/research.html">Research</a>
+        <a href="pages/disclaimer.html">Disclaimer</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Hero ── -->
+  <section class="hero">
+    <div class="container">
+      <div class="hero__content">
+        <span class="hero__tag">Quantitative Mean Reversion</span>
+        <h1>Statistical Mean Reversion.<br><span class="highlight">Every Signal Backed by Quantifiable Edge.</span></h1>
+        <p class="hero__sub">
+          SENTINEL applies rigorous quantitative analysis to crypto markets —
+          entering trades only when statistical conditions are extreme, confirmed,
+          and validated. 30–60 signals per month. Rule-based. Disciplined.
+          Verified on Cryptohopper's paper trading infrastructure.
+        </p>
+        <div class="hero__cta">
+          <a href="pages/methodology.html" class="btn btn--primary">View the Statistical Methodology &rarr;</a>
+          <a href="pages/products.html" class="btn btn--secondary">See Products on Cryptohopper</a>
+        </div>
+        <p class="hero__disclaimer">
+          Paper trading only. Statistical edge in past data does not guarantee future results.
+          Not financial advice.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── What is Mean Reversion? ── -->
+  <section class="section section--alt">
+    <div class="container">
+      <span class="section__label">Concept</span>
+      <h2 class="section__title">Markets overshoot. SENTINEL profits when they correct.</h2>
+      <div class="section__body">
+        <p>
+          Mean reversion is a well-documented statistical phenomenon: prices that deviate
+          significantly from their historical average tend to return toward that average over time.
+          This happens in crypto markets with striking regularity — not because markets are
+          rational, but because extreme moves trigger counter-reactions. Oversold assets
+          attract buyers. Overbought assets attract sellers.
+        </p>
+        <br>
+        <p>
+          SENTINEL's job is to identify these extremes with mathematical precision —
+          and enter counter-trend positions at statistically advantageous moments.
+        </p>
+        <br>
+        <p>
+          <strong>This is not intuition. This is measurement.</strong>
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── The Three Conditions ── -->
+  <section class="section">
+    <div class="container">
+      <span class="section__label">Signal Logic</span>
+      <h2 class="section__title">The Three Conditions</h2>
+
+      <div class="conditions-grid">
+        <div class="condition-card">
+          <div class="condition-card__number">Condition 01</div>
+          <div class="condition-card__title">RSI(2) Extreme</div>
+          <p class="condition-card__text">
+            RSI(2) below 10 for buy signals. RSI(2) above 90 for sell signals.
+            RSI with period 2 reacts to short-term extremes that RSI(14) misses entirely.
+            Backtested extensively by Larry Connors. Edge confirmed in academic literature.
+          </p>
+        </div>
+        <div class="condition-card">
+          <div class="condition-card__number">Condition 02</div>
+          <div class="condition-card__title">Bollinger Band Penetration</div>
+          <p class="condition-card__text">
+            Price must touch or cross below the lower Bollinger Band (20-period, 2&sigma;).
+            This confirms that the price deviation exceeds 2 standard deviations from the mean —
+            a statistically rare event (~5% of all candles).
+          </p>
+        </div>
+        <div class="condition-card">
+          <div class="condition-card__number">Condition 03</div>
+          <div class="condition-card__title">Volume Confirmation</div>
+          <p class="condition-card__text">
+            Volume must exceed the 20-period average by at least 50%.
+            High volume on extreme moves confirms capitulation or exhaustion —
+            the selling/buying pressure that precedes the reversion.
+          </p>
+        </div>
+      </div>
+
+      <div class="conditions-note">
+        ALL THREE MUST BE TRUE SIMULTANEOUSLY. If any condition is absent, no signal fires.
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Risk Framework ── -->
+  <section class="section section--alt">
+    <div class="container">
+      <span class="section__label">Risk Management</span>
+      <h2 class="section__title">Counter-trend trading demands strict risk management.</h2>
+      <div class="section__body">
+        <p>
+          Mean reversion is a powerful edge — but it comes with a specific risk:
+          during strong trending markets, reversion signals fail repeatedly.
+          SENTINEL manages this with three layers:
+        </p>
+      </div>
+
+      <ul class="risk-list">
+        <li class="risk-list__item">
+          <div class="risk-list__number">1</div>
+          <div class="risk-list__content">
+            <h4>Position size: 1% maximum risk per trade</h4>
+            <p>Small enough to survive a streak of consecutive losses without significant drawdown.</p>
+          </div>
+        </li>
+        <li class="risk-list__item">
+          <div class="risk-list__number">2</div>
+          <div class="risk-list__content">
+            <h4>Hard stop: 2% maximum loss per position</h4>
+            <p>No exceptions. Every position has a predefined exit point that limits downside.</p>
+          </div>
+        </li>
+        <li class="risk-list__item">
+          <div class="risk-list__number">3</div>
+          <div class="risk-list__content">
+            <h4>Time exit: positions closed after 5 days</h4>
+            <p>
+              The time exit is critical. Waiting for mean reversion in a trending market can
+              result in large losses. SENTINEL cuts the position after 5 days and reassesses —
+              preserving capital for the next statistically valid opportunity.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── Research Basis ── -->
+  <section class="section">
+    <div class="container">
+      <span class="section__label">Academic Foundation</span>
+      <h2 class="section__title">Grounded in published quantitative research.</h2>
+      <div class="section__body">
+        <p>SENTINEL's methodology draws from the following published works (among others):</p>
+      </div>
+
+      <ul class="research-list">
+        <li class="research-item">
+          <div class="research-item__author">Larry Connors &amp; Cesar Alvarez</div>
+          <div class="research-item__title">"Short Term Trading Strategies That Work"</div>
+          <p class="research-item__desc">RSI(2) mean reversion backtests across equity markets.</p>
+        </li>
+        <li class="research-item">
+          <div class="research-item__author">Ernest P. Chan</div>
+          <div class="research-item__title">"Quantitative Trading" and "Algorithmic Trading"</div>
+          <p class="research-item__desc">Statistical arbitrage and mean reversion implementation.</p>
+        </li>
+        <li class="research-item">
+          <div class="research-item__author">Colin Bennett</div>
+          <div class="research-item__title">"Trading Volatility, Correlation, Term Structure and Skew"</div>
+          <p class="research-item__desc">Volatility-regime analysis for entry/exit timing.</p>
+        </li>
+      </ul>
+
+      <p class="research-disclaimer">
+        The application of these methods to cryptocurrency markets is SENTINEL's
+        own adaptation. Academic results do not transfer directly to crypto markets.
+        Not financial advice. Past research performance ≠ future crypto performance.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="assets/logo.svg" alt="SENTINEL">
+            <span>SENTINEL</span>
+          </div>
+          <p class="footer__legal">
+            &copy; 2026 SENTINEL Signals. All signals and results are from paper trading only.
+            Mean reversion trading involves significant risk, particularly during trending
+            markets. Not financial advice. Past performance is not indicative of future results.
+            Dutch law: no leveraged token signals. Statistical edge in historical data
+            does not guarantee future profitability.
+          </p>
+        </div>
+        <div class="footer__links">
+          <a href="pages/methodology.html">Methodology</a>
+          <a href="pages/track-record.html">Track Record</a>
+          <a href="pages/products.html">Products</a>
+          <a href="pages/research.html">Research</a>
+          <a href="pages/disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ── Disclaimer Modal ── -->
+  <div class="modal-overlay" id="disclaimerModal">
+    <div class="modal">
+      <div class="modal__icon">&#9888;&#65039;</div>
+      <h3 class="modal__title">Important Notice</h3>
+      <p class="modal__text">
+        This website provides information about SENTINEL's paper trading activities
+        on Cryptohopper. All results shown are from paper trading — no real capital
+        is involved.<br><br>
+        Nothing on this website constitutes financial advice. Cryptocurrency trading
+        involves substantial risk. You may lose all invested capital. Past performance
+        does not guarantee future results.<br><br>
+        By continuing to use this site, you acknowledge that you have read and
+        understood this disclaimer.
+      </p>
+      <button class="btn btn--primary modal__btn" id="disclaimerAccept">I understand — Continue</button>
+    </div>
+  </div>
+
+  <!-- ── Cookie Banner ── -->
+  <div class="cookie-banner" id="cookieBanner">
+    <p class="cookie-banner__text">We use analytics cookies to improve your experience. We do not sell your data.</p>
+    <div class="cookie-banner__actions">
+      <button class="cookie-banner__btn cookie-banner__btn--accept" id="cookieAccept">Accept</button>
+      <button class="cookie-banner__btn cookie-banner__btn--manage" id="cookieManage">Manage preferences</button>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

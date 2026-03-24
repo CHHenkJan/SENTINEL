@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Research — SENTINEL</title>
+  <meta name="description" content="The quantitative research basis behind SENTINEL's mean reversion methodology.">
+  <link rel="icon" href="../assets/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+  <!-- ── Header ── -->
+  <header class="header">
+    <div class="header__inner">
+      <a href="../index.html" class="header__logo">
+        <img src="../assets/logo.svg" alt="SENTINEL Logo" class="header__logo-img">
+        <span class="header__logo-text">SENTINEL</span>
+      </a>
+      <button class="header__menu-toggle" id="menuToggle" aria-label="Toggle navigation">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="header__nav" id="navMenu">
+        <a href="../index.html">Home</a>
+        <a href="methodology.html">Methodology</a>
+        <a href="track-record.html">Track Record</a>
+        <a href="products.html">Products</a>
+        <a href="research.html" class="active">Research</a>
+        <a href="disclaimer.html">Disclaimer</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ── Page Header ── -->
+  <section class="page-header">
+    <div class="container">
+      <span class="section__label">Research</span>
+      <h1 class="section__title">Mean Reversion Research Basis</h1>
+      <p class="section__body">
+        SENTINEL's methodology is grounded in published quantitative research.
+        Below are the key works and concepts that inform the system.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Research References ── -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section__title">Published Works</h2>
+
+      <ul class="research-list">
+        <li class="research-item">
+          <div class="research-item__author">Larry Connors &amp; Cesar Alvarez</div>
+          <div class="research-item__title">"Short Term Trading Strategies That Work"</div>
+          <p class="research-item__desc">
+            Extensive backtests of RSI(2) as a mean reversion indicator across equity markets.
+            Demonstrated that extreme RSI(2) readings (&lt;10 and &gt;90) have historically preceded
+            short-term reversals with statistical significance. SENTINEL adapts this approach
+            to cryptocurrency markets.
+          </p>
+        </li>
+        <li class="research-item">
+          <div class="research-item__author">Ernest P. Chan</div>
+          <div class="research-item__title">"Quantitative Trading" and "Algorithmic Trading"</div>
+          <p class="research-item__desc">
+            Comprehensive frameworks for implementing statistical arbitrage and mean reversion
+            strategies. Covers position sizing, risk management, and the mathematics of
+            mean-reverting time series. Key source for SENTINEL's risk framework and
+            portfolio construction methodology.
+          </p>
+        </li>
+        <li class="research-item">
+          <div class="research-item__author">Colin Bennett</div>
+          <div class="research-item__title">"Trading Volatility, Correlation, Term Structure and Skew"</div>
+          <p class="research-item__desc">
+            Volatility-regime analysis for entry and exit timing. Bennett's work on
+            realized vs. implied volatility dynamics informs SENTINEL's understanding
+            of when mean reversion conditions are most likely to succeed.
+          </p>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ── Key Concepts ── -->
+  <section class="section section--alt">
+    <div class="container">
+      <h2 class="section__title">Key Statistical Concepts</h2>
+
+      <div class="conditions-grid">
+        <div class="condition-card">
+          <div class="condition-card__number">Concept</div>
+          <div class="condition-card__title">RSI(2) — Short-Period RSI</div>
+          <p class="condition-card__text">
+            The Relative Strength Index with a 2-period lookback captures extreme short-term
+            momentum shifts. Unlike RSI(14), RSI(2) oscillates rapidly between extremes,
+            making it ideal for identifying capitulation and exhaustion events.
+          </p>
+        </div>
+        <div class="condition-card">
+          <div class="condition-card__number">Concept</div>
+          <div class="condition-card__title">Bollinger Bands — 2&sigma; Deviation</div>
+          <p class="condition-card__text">
+            Bollinger Bands (20-period, 2 standard deviations) provide a dynamic envelope
+            around price. Penetration of the outer bands represents statistically rare events
+            — approximately 5% of all candles touch or exceed 2&sigma;, making these high-probability
+            reversion zones.
+          </p>
+        </div>
+        <div class="condition-card">
+          <div class="condition-card__number">Concept</div>
+          <div class="condition-card__title">Volume Spike Confirmation</div>
+          <p class="condition-card__text">
+            Above-average volume during price extremes confirms that the move is driven by
+            capitulation (panic selling) or exhaustion (euphoric buying). These high-volume
+            extreme events historically precede mean reversion more reliably than low-volume drifts.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Disclaimer ── -->
+  <section class="section">
+    <div class="container">
+      <p class="research-disclaimer">
+        The application of these methods to cryptocurrency markets is SENTINEL's
+        own adaptation. Academic results in equity or fixed-income markets do not transfer
+        directly to crypto markets, which exhibit different microstructure, liquidity profiles,
+        and volatility characteristics. Not financial advice. Past research performance ≠ future
+        crypto performance.
+      </p>
+    </div>
+  </section>
+
+  <!-- ── Footer ── -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer__inner">
+        <div class="footer__brand">
+          <div class="footer__logo">
+            <img src="../assets/logo.svg" alt="SENTINEL">
+            <span>SENTINEL</span>
+          </div>
+          <p class="footer__legal">
+            &copy; 2026 SENTINEL Signals. Paper trading only. Not financial advice.
+          </p>
+        </div>
+        <div class="footer__links">
+          <a href="methodology.html">Methodology</a>
+          <a href="track-record.html">Track Record</a>
+          <a href="products.html">Products</a>
+          <a href="research.html">Research</a>
+          <a href="disclaimer.html">Disclaimer</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
