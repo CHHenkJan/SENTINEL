@@ -1,44 +1,49 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
   <defs>
-    <radialGradient id="glow" cx="50%" cy="50%" r="15%">
-      <stop offset="0%" stop-color="#4a9eff" stop-opacity="0.8"/>
+    <radialGradient id="glow" cx="50%" cy="50%" r="25%">
+      <stop offset="0%" stop-color="#4a9eff" stop-opacity="0.6"/>
+      <stop offset="60%" stop-color="#4a9eff" stop-opacity="0.15"/>
       <stop offset="100%" stop-color="#4a9eff" stop-opacity="0"/>
     </radialGradient>
-    <linearGradient id="shieldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#4a9eff"/>
+    <linearGradient id="shieldGrad" x1="50%" y1="0%" x2="50%" y2="100%">
+      <stop offset="0%" stop-color="#5ab0ff"/>
       <stop offset="100%" stop-color="#2a7acc"/>
     </linearGradient>
   </defs>
 
   <!-- Background -->
-  <rect width="512" height="512" fill="#060a12" rx="8"/>
+  <rect width="512" height="512" fill="#0a1020" rx="8"/>
 
-  <!-- Shield outer shape -->
-  <path d="M256 60 L420 140 L420 300 L256 420 L92 300 L92 140 Z"
-        fill="none" stroke="#4a9eff" stroke-width="4" opacity="0.9"/>
+  <!-- Glow effect behind shield -->
+  <circle cx="256" cy="240" r="140" fill="url(#glow)"/>
 
-  <!-- Inner rectangle frame -->
-  <rect x="176" y="140" width="160" height="160" rx="4"
-        fill="none" stroke="#4a9eff" stroke-width="3" opacity="0.7"/>
+  <!-- Outer shield shape - wide top, tapered to point at bottom -->
+  <path d="M256 72
+           L432 160
+           L432 296
+           L256 440
+           L80 296
+           L80 160
+           Z"
+        fill="none" stroke="url(#shieldGrad)" stroke-width="6" stroke-linejoin="round" opacity="0.9"/>
 
-  <!-- Connecting lines (targeting reticle style) -->
-  <line x1="176" y1="140" x2="138" y2="108" stroke="#4a9eff" stroke-width="1.5" opacity="0.4"/>
-  <line x1="336" y1="140" x2="374" y2="108" stroke="#4a9eff" stroke-width="1.5" opacity="0.4"/>
-  <line x1="176" y1="300" x2="138" y2="332" stroke="#4a9eff" stroke-width="1.5" opacity="0.4"/>
-  <line x1="336" y1="300" x2="374" y2="332" stroke="#4a9eff" stroke-width="1.5" opacity="0.4"/>
+  <!-- Inner shield shape - smaller, same proportions -->
+  <path d="M256 132
+           L376 192
+           L376 296
+           L256 380
+           L136 296
+           L136 192
+           Z"
+        fill="none" stroke="#4a9eff" stroke-width="4" stroke-linejoin="round" opacity="0.7"/>
+
+  <!-- Horizontal accent lines on inner shield -->
+  <line x1="136" y1="192" x2="376" y2="192" stroke="#4a9eff" stroke-width="2" opacity="0.3"/>
+  <line x1="160" y1="296" x2="352" y2="296" stroke="#4a9eff" stroke-width="1.5" opacity="0.2"/>
 
   <!-- Central square -->
-  <rect x="232" y="196" width="48" height="48" fill="#4a9eff" rx="2"/>
+  <rect x="224" y="208" width="64" height="64" fill="#4a9eff" rx="4" opacity="0.95"/>
 
-  <!-- Glow effect -->
-  <circle cx="256" cy="220" r="80" fill="url(#glow)"/>
-
-  <!-- SENTINEL text -->
-  <text x="256" y="460" text-anchor="middle"
-        font-family="'JetBrains Mono', 'Courier New', monospace"
-        font-weight="700" font-size="36" letter-spacing="6"
-        fill="#4a9eff">SENTINEL</text>
-
-  <!-- Thin horizontal rule under text -->
-  <line x1="140" y1="475" x2="372" y2="475" stroke="#4a9eff" stroke-width="1.5" opacity="0.5"/>
+  <!-- Inner glow on central square -->
+  <rect x="236" y="220" width="40" height="40" fill="#7ac0ff" rx="2" opacity="0.4"/>
 </svg>
