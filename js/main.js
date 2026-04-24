@@ -3,6 +3,13 @@
    ══════════════════════════════════════════ */
 
 document.addEventListener('DOMContentLoaded', () => {
+  // Dev-only: skip disclaimer+cookie banner with ?preview in URL (used for headless screenshots)
+  const preview = new URLSearchParams(location.search).has('preview');
+  if (preview) {
+    sessionStorage.setItem('sentinel_disclaimer_dismissed', 'true');
+    localStorage.setItem('sentinel_cookies', 'accepted');
+  }
+
   // ── Disclaimer Modal ──
   const modal = document.getElementById('disclaimerModal');
   const modalBtn = document.getElementById('disclaimerAccept');

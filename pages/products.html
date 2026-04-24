@@ -10,12 +10,11 @@
 </head>
 <body>
 
-  <!-- ── Header ── -->
   <header class="header">
     <div class="header__inner">
       <a href="../index.html" class="header__logo">
-        <img src="../assets/logo.svg" alt="SENTINEL Logo" class="header__logo-img">
-        <span class="header__logo-text">SENTINEL</span>
+        <img src="../assets/logo.svg" alt="SENTINEL" class="header__logo-img">
+        <span class="header__logo-text">Sentinel</span>
       </a>
       <button class="header__menu-toggle" id="menuToggle" aria-label="Toggle navigation">
         <span></span><span></span><span></span>
@@ -34,10 +33,12 @@
   <!-- ── Page Header ── -->
   <section class="page-header">
     <div class="container">
-      <span class="section__label">Marketplace</span>
+      <div class="eyebrow eyebrow--id">
+        <span class="eyebrow__code">§ 00</span> · Marketplace
+      </div>
       <h1 class="section__title">Products</h1>
       <p class="section__body">
-        SENTINEL products available on the Cryptohopper marketplace.
+        Sentinel products available on the Cryptohopper marketplace.
         All products are based on paper trading results.
       </p>
     </div>
@@ -46,105 +47,199 @@
   <!-- ── Products Grid ── -->
   <section class="section">
     <div class="container">
+      <div class="eyebrow eyebrow--id">
+        <span class="eyebrow__code">§ 01</span> · Lineup
+      </div>
       <div class="products-grid">
 
         <!-- Signals -->
-        <div class="product-card">
-          <div class="product-card__tag">Signals</div>
-          <h3 class="product-card__name">SENTINEL Signals — Statistical Mean Reversion</h3>
-          <p class="product-card__desc">
-            Buy and sell signals based on SENTINEL's quantitative mean reversion methodology.
-            Every signal requires three confirmations: RSI(2) in extreme territory (&lt;10 buy,
-            &gt;90 sell), Bollinger Band penetration, and a volume spike of 1.5&times; average — all
-            on the same candle. No exceptions.<br><br>
-            30–60 signals per month across BTC, ETH, and top-cap altcoins on 4-hour and daily
-            timeframes. Hold time: 1–5 days maximum (time-based exit enforced). Risk per trade:
-            1% max. Counter-trend by nature — expect short holds and frequent re-entries.<br><br>
-            All signals logged with statistical rationale. Not financial advice. Past performance
-            does not guarantee future results.
-          </p>
-          <div class="product-card__meta">
-            <span class="product-card__badge">Low-Medium Risk</span>
-            <span class="product-card__badge">30–60/month</span>
+        <article class="product-card">
+          <div class="product-card__art">
+            <img src="../assets/logo.svg" alt="" class="product-card__icon">
+            <div class="product-card__pill">Signals</div>
           </div>
-          <a href="#" class="btn btn--secondary">View on Cryptohopper</a>
-        </div>
+          <div class="product-card__body">
+            <div class="product-card__tag">Signals</div>
+            <h3 class="product-card__name">Sentinel Signals — Statistical Mean Reversion</h3>
+            <p class="product-card__desc">
+              Buy and sell signals based on Sentinel's quantitative mean reversion methodology.
+              Every signal requires three confirmations: RSI(2) in extreme territory (&lt;10 buy,
+              &gt;90 sell), Bollinger Band penetration, and a volume spike of 1.5× average — all
+              on the same candle. No exceptions. 30–60 signals per month across BTC, ETH, and
+              top-cap altcoins on 4-hour and daily timeframes. Hold time: 1–5 days maximum.
+              Risk per trade: 1% max. Counter-trend by nature.
+            </p>
+            <div class="product-card__meta">
+              <span class="product-card__badge">Low–Medium Risk</span>
+              <span class="product-card__badge">30–60 / mo</span>
+            </div>
+            <a href="https://www.cryptohopper.com/signaller?signaller_id=744" target="_blank" rel="noopener" class="btn btn--secondary">View on Cryptohopper</a>
+          </div>
+        </article>
 
         <!-- Strategy -->
-        <div class="product-card">
-          <div class="product-card__tag">Strategy</div>
-          <h3 class="product-card__name">SENTINEL Strategy — RSI(2) Reversion Stack</h3>
-          <p class="product-card__desc">
-            Strategy Builder configuration based on SENTINEL's disciplined mean reversion
-            system. Uses RSI(2) for extreme oversold/overbought detection, Bollinger Bands
-            for penetration confirmation, and Williams %R as exit timing indicator.<br><br>
-            4-hour candle size recommended. Buy triggers when RSI(2) &lt; 10 with BB lower band
-            touch. Sell triggers when RSI(2) &gt; 85 or price reaches BB middle band. Designed
-            for 30–60 signals per month in ranging and volatile markets.<br><br>
-            Best paired with SENTINEL Template. Performs poorly during sustained trending
-            phases — includes regime guidance on when to pause. Not financial advice.
-          </p>
-          <div class="product-card__meta">
-            <span class="product-card__badge">Low-Medium Risk</span>
-            <span class="product-card__badge">Config Visible</span>
+        <article class="product-card">
+          <div class="product-card__art">
+            <img src="../assets/logo.svg" alt="" class="product-card__icon">
+            <div class="product-card__pill">Strategy</div>
           </div>
-          <a href="#" class="btn btn--secondary">View on Cryptohopper</a>
-        </div>
+          <div class="product-card__body">
+            <div class="product-card__tag">Strategy</div>
+            <h3 class="product-card__name">Sentinel Strategy — RSI(2) Reversion Stack</h3>
+            <p class="product-card__desc">
+              Strategy Builder configuration based on Sentinel's disciplined mean reversion
+              system. Uses RSI(2) for extreme oversold/overbought detection, Bollinger Bands
+              for penetration confirmation, and Williams %R as exit timing indicator. 4-hour
+              candle size recommended. Buy triggers when RSI(2) &lt; 10 with BB lower band touch.
+              Best paired with Sentinel Template. Performs poorly during sustained trending
+              phases — includes regime guidance on when to pause.
+            </p>
+            <div class="product-card__meta">
+              <span class="product-card__badge">Low–Medium Risk</span>
+              <span class="product-card__badge">Config visible</span>
+            </div>
+            <button type="button" class="btn btn--secondary" disabled aria-disabled="true">Coming soon</button>
+          </div>
+        </article>
 
         <!-- Template -->
-        <div class="product-card">
-          <div class="product-card__tag">Template</div>
-          <h3 class="product-card__name">SENTINEL Complete Hopper Template</h3>
-          <p class="product-card__desc">
-            Full mean-reversion hopper configuration for methodical traders. Includes: top-15
-            liquid coin selection, 1% max risk per counter-trend position, hard stop loss at
-            2%, time-based exit at 5 days maximum, maximum 6 simultaneous positions with
-            correlation limits, and all SENTINEL strategy parameters pre-configured.<br><br>
-            Optimized for 4-hour candles on Binance and Bitvavo. Compatible with all major
-            exchanges. One-time purchase — apply directly to your hopper.<br><br>
-            Counter-trend trading carries specific risks. This template does not guarantee
-            profitable trades. Always monitor open positions. Not financial advice.
-          </p>
-          <div class="product-card__meta">
-            <span class="product-card__badge">One-time</span>
+        <article class="product-card">
+          <div class="product-card__art">
+            <img src="../assets/logo.svg" alt="" class="product-card__icon">
+            <div class="product-card__pill">Template</div>
           </div>
-          <div class="product-card__price">$29</div>
-          <a href="#" class="btn btn--secondary">View on Cryptohopper</a>
-        </div>
+          <div class="product-card__body">
+            <div class="product-card__tag">Template</div>
+            <h3 class="product-card__name">Sentinel Complete Bot Template</h3>
+            <p class="product-card__desc">
+              Full mean-reversion bot configuration for methodical traders. Includes: top-15
+              liquid coin selection, 1% max risk per counter-trend position, hard stop loss at
+              2%, time-based exit at 5 days maximum, maximum 6 simultaneous positions with
+              correlation limits, and all Sentinel strategy parameters pre-configured. Optimized
+              for 4-hour candles on Binance and Bitvavo. Compatible with all major exchanges.
+              One-time purchase — apply directly to your bot.
+            </p>
+            <div class="product-card__meta">
+              <span class="product-card__badge">One-time</span>
+            </div>
+            <div class="product-card__price">$29 <span>/ one-time</span></div>
+            <a href="https://www.cryptohopper.com/marketplace/search?q=Sentinel&category%5B%5D=templates" target="_blank" rel="noopener" class="btn btn--secondary">View on Cryptohopper</a>
+          </div>
+        </article>
 
         <!-- Copy Bot -->
-        <div class="product-card">
-          <div class="product-card__tag">Copy Bot</div>
-          <h3 class="product-card__name">SENTINEL Copy Bot — Mirror the System</h3>
-          <p class="product-card__desc">
-            Mirror SENTINEL's paper trading hopper with full statistical transparency. Every
-            mean reversion trade SENTINEL executes replicates in your account at your portfolio
-            scale. Complete trade log available: entry conditions, statistical edge scores,
-            hold duration, and exit reasoning for every position.<br><br>
-            30–60 trades per month. Maximum hold time: 5 days. 1% max risk per trade. Maximum
-            150 copiers. Recommended minimum portfolio: $500.<br><br>
-            This mirrors a paper trading account. Counter-trend trading can result in rapid
-            consecutive losses during strong trending markets. Only use capital you can afford
-            to lose. Past performance is not indicative of future results.
-          </p>
-          <div class="product-card__meta">
-            <span class="product-card__badge">Low-Medium Risk</span>
-            <span class="product-card__badge">Max 150 Copiers</span>
-            <span class="product-card__badge">7-Day Free Trial</span>
+        <article class="product-card">
+          <div class="product-card__art">
+            <img src="../assets/logo.svg" alt="" class="product-card__icon">
+            <div class="product-card__pill">Copy Bot</div>
           </div>
-          <div class="product-card__price">$49<span>/mo</span></div>
-          <a href="#" class="btn btn--secondary">View on Cryptohopper</a>
-        </div>
+          <div class="product-card__body">
+            <div class="product-card__tag">Copy Bot</div>
+            <h3 class="product-card__name">Sentinel Copy Bot — Mirror the System</h3>
+            <p class="product-card__desc">
+              Mirror Sentinel's paper trading bot with full statistical transparency. Every
+              mean reversion trade Sentinel executes replicates in your account at your portfolio
+              scale. Complete trade log available: entry conditions, statistical edge scores,
+              hold duration, and exit reasoning for every position. 30–60 trades per month.
+              Maximum hold time: 5 days. 1% max risk per trade. Maximum 150 copiers.
+              Recommended minimum portfolio: $500.
+            </p>
+            <div class="product-card__meta">
+              <span class="product-card__badge">Low–Medium Risk</span>
+              <span class="product-card__badge">Max 150</span>
+              <span class="product-card__badge">7-day trial</span>
+            </div>
+            <div class="product-card__price">$49 <span>/ mo</span></div>
+            <a href="https://www.cryptohopper.com/marketplace/search?q=Sentinel&category%5B%5D=copytrading" target="_blank" rel="noopener" class="btn btn--secondary">View on Cryptohopper</a>
+          </div>
+        </article>
 
       </div>
     </div>
   </section>
 
-  <!-- ── Disclaimer ── -->
+  <!-- ── Supported Exchanges ── -->
   <section class="section section--alt">
     <div class="container">
+      <div class="eyebrow eyebrow--id">
+        <span class="eyebrow__code">§ 02</span> · Supported Infrastructure
+      </div>
+      <h2 class="section__title">Exchanges Sentinel Runs On</h2>
+      <p class="section__body">
+        Sentinel's templates and copy-bot operate across major regulated and global exchanges.
+        Quote currency availability varies per venue.
+      </p>
+
+      <div class="exchanges">
+        <a href="https://www.binance.com/en/register?ref=P6CD65KX" target="_blank" rel="noopener sponsored" class="exchange">
+          <div class="exchange__logo"><img src="https://cdn.cryptohopper.com/images/exchange/binance.svg" alt="Binance"></div>
+          <span class="exchange__name">Binance</span>
+          <span class="exchange__quotes">USDC · USDT</span>
+        </a>
+        <a href="https://www.binance.us/" target="_blank" rel="noopener sponsored" class="exchange">
+          <div class="exchange__logo"><img src="https://cdn.cryptohopper.com/images/exchange/binanceus.svg" alt="Binance US"></div>
+          <span class="exchange__name">Binance US</span>
+          <span class="exchange__quotes">USD</span>
+        </a>
+        <a href="https://bingx.com/invite/AAAR94" target="_blank" rel="noopener sponsored" class="exchange">
+          <div class="exchange__logo"><img src="https://cdn.cryptohopper.com/images/exchange/bingx.svg" alt="BingX"></div>
+          <span class="exchange__name">BingX</span>
+          <span class="exchange__quotes">USDC · USDT</span>
+        </a>
+        <a href="https://www.bitmart.com/register-referral/en?r=VuEYv4" target="_blank" rel="noopener sponsored" class="exchange">
+          <div class="exchange__logo"><img src="https://cdn.cryptohopper.com/images/exchange/bitmart.svg" alt="BitMart"></div>
+          <span class="exchange__name">BitMart</span>
+          <span class="exchange__quotes">USDC · USDT</span>
+        </a>
+        <a href="https://bitvavo.com/en/affiliate/cryptohopper" target="_blank" rel="noopener sponsored" class="exchange">
+          <div class="exchange__logo"><img src="https://cdn.cryptohopper.com/images/exchange/bitvavo.svg" alt="Bitvavo"></div>
+          <span class="exchange__name">Bitvavo</span>
+          <span class="exchange__quotes">EUR · USDC</span>
+        </a>
+        <a href="https://www.bybit.com/" target="_blank" rel="noopener" class="exchange">
+          <div class="exchange__logo"><img src="https://cdn.cryptohopper.com/images/exchange/bybit.svg" alt="Bybit"></div>
+          <span class="exchange__name">Bybit</span>
+          <span class="exchange__quotes">USDC · USDT</span>
+        </a>
+        <a href="https://coinbase-consumer.sjv.io/anKdgR" target="_blank" rel="noopener sponsored" class="exchange">
+          <div class="exchange__logo"><img src="https://cdn.cryptohopper.com/images/exchange/coinbase.svg" alt="Coinbase"></div>
+          <span class="exchange__name">Coinbase</span>
+          <span class="exchange__quotes">EUR · USD · USDC</span>
+        </a>
+        <a href="https://crypto.com/exch/4pv7m446qs" target="_blank" rel="noopener sponsored" class="exchange">
+          <div class="exchange__logo"><img src="https://cdn.cryptohopper.com/images/exchange/crypto.svg" alt="Crypto.com"></div>
+          <span class="exchange__name">Crypto.com</span>
+          <span class="exchange__quotes">USD · USDT</span>
+        </a>
+        <a href="https://www.htx.co.zw/invite/en-us/1h?invite%5Fcode=9cqt3" target="_blank" rel="noopener sponsored" class="exchange">
+          <div class="exchange__logo"><img src="https://cdn.cryptohopper.com/images/exchange/huobi.svg" alt="HTX"></div>
+          <span class="exchange__name">HTX</span>
+          <span class="exchange__quotes">USDT</span>
+        </a>
+        <a href="https://kraken.pxf.io/LXGyW0" target="_blank" rel="noopener sponsored" class="exchange">
+          <div class="exchange__logo"><img src="https://cdn.cryptohopper.com/images/exchange/kraken2.svg" alt="Kraken"></div>
+          <span class="exchange__name">Kraken</span>
+          <span class="exchange__quotes">USD · USDC · USDT</span>
+        </a>
+        <a href="https://www.kucoin.com/r/af/s7ywae" target="_blank" rel="noopener sponsored" class="exchange">
+          <div class="exchange__logo"><img src="https://cdn.cryptohopper.com/images/exchange/kucoin.svg" alt="KuCoin"></div>
+          <span class="exchange__name">KuCoin</span>
+          <span class="exchange__quotes">USDC · USDT</span>
+        </a>
+        <a href="https://www.okx.com/join/1850952" target="_blank" rel="noopener sponsored" class="exchange">
+          <div class="exchange__logo"><img src="https://cdn.cryptohopper.com/images/exchange/okex.svg" alt="OKX"></div>
+          <span class="exchange__name">OKX</span>
+          <span class="exchange__quotes">USD · USDT</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ── Disclaimer ── -->
+  <section class="section">
+    <div class="container">
       <div class="track-disclaimer">
-        All products are based on paper trading performance. No real capital is deployed by SENTINEL.
+        All products are based on paper trading performance. No real capital is deployed by Sentinel.
         Cryptocurrency trading involves substantial risk. You may lose all invested capital.
         Past performance does not guarantee future results. Not financial advice.
         In compliance with Dutch law (Wft), no leveraged token signals are provided.
@@ -152,25 +247,39 @@
     </div>
   </section>
 
-  <!-- ── Footer ── -->
   <footer class="footer">
     <div class="container">
       <div class="footer__inner">
         <div class="footer__brand">
           <div class="footer__logo">
-            <img src="../assets/logo.svg" alt="SENTINEL">
-            <span>SENTINEL</span>
+            <img src="../assets/logo.svg" alt="Sentinel">
+            <span>Sentinel</span>
           </div>
+          <div class="footer__tagline">Order · Discipline · Reversion</div>
           <p class="footer__legal">
-            &copy; 2026 SENTINEL Signals. Paper trading only. Not financial advice.
+            &copy; 2026 Sentinel Signals. Paper trading only. Not financial advice.
           </p>
+          <div class="footer__social">
+            <a href="https://x.com/SentinelAIBot" target="_blank" rel="noopener" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M18.244 2h3.308l-7.227 8.26L23 22h-6.7l-5.242-6.855L4.99 22H1.68l7.73-8.836L1 2h6.87l4.74 6.268L18.244 2Zm-1.16 18h1.833L7.029 3.892H5.063L17.084 20Z"/></svg>
+            </a>
+            <a href="https://t.me/seniteltheruler" target="_blank" rel="noopener" aria-label="Telegram">
+              <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 2 10.33l6.23 2.1L18.5 5.5 10.1 13.9l-.33 6.1 3.4-3.25 4.63 3.43L22 2Z"/></svg>
+            </a>
+          </div>
         </div>
-        <div class="footer__links">
+        <nav class="footer__links" aria-label="Footer">
           <a href="methodology.html">Methodology</a>
           <a href="track-record.html">Track Record</a>
           <a href="products.html">Products</a>
           <a href="research.html">Research</a>
           <a href="disclaimer.html">Disclaimer</a>
+          <a href="mailto:sentinel@cryptohopper.com">Contact</a>
+        </nav>
+        <div class="footer__meta">
+          <span>SYS / PAPER-TRADING <span class="dot">●</span> ACTIVE</span>
+          <span>BUILD <span class="dot">·</span> 2026.04.24</span>
+          <span>JURISDICTION <span class="dot">·</span> NL · WFT</span>
         </div>
       </div>
     </div>
